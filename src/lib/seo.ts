@@ -11,14 +11,33 @@ type BuildMetadataArgs = {
 
 const BASE_KEYWORDS = [
   'Sikkim Game',
+  'Sikkim Games',
   'Sikkim Game Login',
+  'Sikkim Login',
   'Sikkim Game Register',
+  'Sikkim Register',
+  'Sikkim Game Sign Up',
   'Sikkim Game Download',
   'Sikkim Game APK',
+  'Sikkim Game App',
   'Sikkim Wingo Prediction',
+  'Sikkim Wingo',
   'Sikkim Colour Prediction',
+  'Sikkim Colour Prediction Tricks',
   'Sikkim Game Invite Code',
+  'Sikkim Game Referral Code',
   'Sikkim Game Gift Code',
+  'Sikkim Game Redeem Code',
+  'Sikkim Game Referral Bonus',
+  'Sikkim Game Refer and Earn',
+  'Sikkim Game Customer Care',
+  'Sikkim Game Support',
+  'Sikkim Game Deposit',
+  'Sikkim Game Withdrawal',
+  'Sikkim Game Real or Fake',
+  'Is Sikkim Game Legit',
+  'Sikkim Game Daily Bonus',
+  'Sikkim Game VIP Levels',
 ];
 
 export function buildMetadata({ title, description, path, keywords, ogTitle }: BuildMetadataArgs): Metadata {
@@ -45,6 +64,8 @@ export function buildMetadata({ title, description, path, keywords, ogTitle }: B
     },
     twitter: {
       card: 'summary_large_image',
+      site: SITE.twitterHandle,
+      creator: SITE.twitterHandle,
       title: fullTitle,
       description,
       images: [ogImageUrl],

@@ -11,6 +11,7 @@ import { CtaButton } from '@/components/ui/Button';
 import { DownloadIcon, ShieldIcon, SmartphoneIcon } from '@/components/icons';
 import { downloadFaqs, downloadSteps } from '@/lib/content/download';
 import { SITE } from '@/lib/site';
+import { JsonLd, softwareAppSchema } from '@/lib/schema';
 import appIcon from '../../../public/images/brand/app-icon-512.png';
 
 export const metadata: Metadata = buildMetadata({
@@ -24,6 +25,7 @@ export const metadata: Metadata = buildMetadata({
 export default function DownloadPage() {
   return (
     <>
+      <JsonLd data={softwareAppSchema()} />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Download', path: '/download' }]} />
       <PageHero
         eyebrow="Sikkim Game Download"
