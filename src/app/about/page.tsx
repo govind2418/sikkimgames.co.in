@@ -13,9 +13,9 @@ import { DISCLAIMER } from '@/lib/site';
 export const metadata: Metadata = buildMetadata({
   title: 'About Sikkim Game — Who We Are',
   description:
-    'Learn about sikkimgame.in.net: an independent Sikkim Game information hub covering login, registration, downloads, and game guides.',
+    'Learn about sikkimgames.co.in: an independent Sikkim Game player guide covering login, registration, downloads, and game explainers.',
   path: '/about',
-  keywords: ['About Sikkim Game', 'Sikkim Game Info'],
+  keywords: ['About Sikkim Game', 'Sikkim Game Guide'],
 });
 
 export default function AboutPage() {
@@ -24,18 +24,18 @@ export default function AboutPage() {
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]} />
       <PageHero
         eyebrow="About Us"
-        title="About Sikkim Game Info Hub"
-        intro="sikkimgame.in.net exists to make Sikkim Game information easy to find, accurate, and free of clutter. Here's who we are and how this site works."
+        title="About the Sikkim Game Players Guide"
+        intro="sikkimgames.co.in exists to make Sikkim Game information easy to find, accurate, and free of clutter. Here's who we are and how this site works."
       />
 
       <Section>
-        <div className="space-y-5 text-sm leading-relaxed text-slate-300 max-w-3xl">
+        <div className="max-w-3xl space-y-5 text-sm leading-relaxed text-night-700/80 dark:text-paper-200/80">
           <p>
             Searching for &quot;Sikkim Game&quot; often turns up scattered, outdated, or overly
-            promotional pages. We built sikkimgame.in.net as a single, fast-loading hub covering
-            the exact things players look for: how to log in, how to register, where to download
-            the app, how invite and gift codes work, and plain explanations of the Wingo and
-            Colour Prediction game modes.
+            promotional pages. We built sikkimgames.co.in as a single, fast-loading guide covering
+            exactly what players look for: how to log in, how to register, where to get the app,
+            how bonus codes work, and plain explanations of the Wingo and Colour Prediction game
+            modes.
           </p>
           <p>
             This site is independent and unofficial. We are not the game developer or operator,
@@ -47,25 +47,25 @@ export default function AboutPage() {
 
         <div className="mt-10 grid gap-5 sm:grid-cols-3">
           <Card>
-            <ZapIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Our goal</h3>
-            <p className="mt-2 text-sm text-slate-300">
+            <ZapIcon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-3 text-base font-semibold text-night-900 dark:text-white">Our goal</h3>
+            <p className="mt-2 text-sm text-night-700/80 dark:text-paper-200/80">
               Fast, accurate, jargon-free guides so you spend less time searching and more time
               informed.
             </p>
           </Card>
           <Card>
-            <ShieldIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Our approach</h3>
-            <p className="mt-2 text-sm text-slate-300">
-              Transparent labeling of what we are (an information/affiliate hub) and what we are
-              not (the operator).
+            <ShieldIcon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-3 text-base font-semibold text-night-900 dark:text-white">Our approach</h3>
+            <p className="mt-2 text-sm text-night-700/80 dark:text-paper-200/80">
+              Transparent labelling of what we are (a player guide/affiliate resource) and what we
+              are not (the operator).
             </p>
           </Card>
           <Card>
-            <UsersIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Who it&apos;s for</h3>
-            <p className="mt-2 text-sm text-slate-300">
+            <UsersIcon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-3 text-base font-semibold text-night-900 dark:text-white">Who it&apos;s for</h3>
+            <p className="mt-2 text-sm text-night-700/80 dark:text-paper-200/80">
               Anyone searching for Sikkim Game login, registration, download, or game rule
               information.
             </p>
@@ -73,9 +73,9 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section className="border-t border-white/5 bg-navy-900/40">
+      <Section className="border-t border-night-900/5 bg-paper-100/70 dark:border-white/5 dark:bg-night-900/40">
         <SectionHeading eyebrow="Full disclosure" title="Our disclaimer" />
-        <Card glass className="max-w-3xl text-sm leading-relaxed text-slate-300">
+        <Card glass className="max-w-3xl text-sm leading-relaxed text-night-700/80 dark:text-paper-200/80">
           {DISCLAIMER}
         </Card>
       </Section>

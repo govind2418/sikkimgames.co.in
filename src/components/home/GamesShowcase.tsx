@@ -6,16 +6,16 @@ import { GridIcon, PaletteIcon } from '@/components/icons';
 const games = [
   {
     icon: GridIcon,
-    name: 'Wingo Game',
-    body: 'A fast-paced number and colour guessing round where every result is generated on a fixed timer. Learn the format, terminology and result cycle.',
-    href: '/wingo',
-    cta: 'Read Wingo Guide',
+    name: 'Wingo Prediction',
+    body: 'A fast, fixed-timer number and colour round. Learn the terminology, the result cycle, and how players read patterns before each round closes.',
+    href: '/sikkim-wingo-prediction',
+    cta: 'Read Wingo Prediction Guide',
   },
   {
     icon: PaletteIcon,
     name: 'Colour Prediction',
-    body: 'Pick a colour before each round closes and see how payouts are structured. Understand the rules before you try it on the official app.',
-    href: '/colour-prediction',
+    body: 'Pick a colour before the round closes and see how payouts are structured. Understand the format before trying it on the official app.',
+    href: '/sikkim-colour-prediction-tricks',
     cta: 'Read Colour Prediction Guide',
   },
 ];
@@ -26,14 +26,14 @@ export function GamesShowcase() {
       <SectionHeading
         eyebrow="Popular game modes"
         title="Wingo & Colour Prediction, explained simply"
-        subtitle="Two of the most searched Sikkim Game modes — here's what to know before you play."
+        subtitle="Two of the most-searched Sikkim Game modes — here's what to know before you play."
       />
       <div className="grid gap-5 sm:grid-cols-2">
         {games.map(({ icon: Icon, name, body, href, cta }) => (
           <Card key={name} glass className="flex flex-col">
-            <Icon className="h-10 w-10 text-neon-400" />
-            <h3 className="mt-4 text-xl font-semibold text-white">{name}</h3>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-300">{body}</p>
+            <Icon className="h-10 w-10 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-4 text-xl font-semibold text-night-900 dark:text-white">{name}</h3>
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-night-700/80 dark:text-paper-200/80">{body}</p>
             <CtaButton href={href} external={false} variant="secondary" className="mt-5 self-start">
               {cta}
             </CtaButton>

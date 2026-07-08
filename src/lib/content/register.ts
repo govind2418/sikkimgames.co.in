@@ -2,51 +2,51 @@ import type { FaqItem } from '@/lib/schema';
 
 export const registerFaqs: FaqItem[] = [
   {
-    question: 'How do I register on Sikkim Game?',
+    question: 'What is the fastest way to register on Sikkim Game?',
     answer:
-      'Open the official app or website, tap Register, enter your mobile number, create a password, verify the OTP sent to your phone, and your account is ready. It usually takes under a minute.',
+      'Open the official app or site, tap Register, enter your mobile number, set a password, confirm the OTP sent by SMS, and your account is live — the whole flow usually takes under a minute.',
   },
   {
-    question: 'Do I need an invite code to register?',
+    question: 'Is an invite code required to sign up?',
     answer:
-      'An invite code is usually optional during registration but can unlock welcome bonuses on some campaigns. See our Invite Code page for details on where to enter one if you have it.',
+      "Not usually — it's optional, but entering one can unlock a welcome bonus on some campaigns. Our Invite Code guide covers exactly where to enter it.",
   },
   {
-    question: 'What details are required to sign up?',
+    question: 'What information do I actually need to provide?',
     answer:
-      'Typically just a valid mobile number, a password of your choice, and OTP verification. Never provide banking passwords or card PINs during registration — those are never required to create an account.',
+      'Just a working mobile number, a password you choose, and OTP confirmation. No legitimate registration step ever asks for banking passwords or card PINs.',
   },
   {
-    question: 'Can I register with the same number twice?',
+    question: 'Can I open a second account with the same number?',
     answer:
-      'No, each mobile number can usually be linked to only one account. If you already registered, use the Login page instead of creating a duplicate account.',
+      'No — each mobile number is generally tied to a single account. If you already have one, use the Login page instead of trying to register again.',
   },
   {
-    question: 'Is Sikkim Game registration free?',
+    question: 'Does creating an account cost anything?',
     answer:
-      'Yes, creating an account is free. You only need to add funds if and when you choose to, and that step is entirely optional and your own decision.',
+      'No, registration itself is free. Adding funds is entirely optional and happens only if and when you choose to do it.',
   },
 ];
 
 export const registerSteps = [
   {
-    title: 'Get the official app or site',
-    body: 'Use our Download page to find the correct APK or web link, then open the registration screen.',
+    title: 'Reach the official platform',
+    body: 'Use our Download page to find the correct APK or web link, then open the sign-up screen from there.',
   },
   {
-    title: 'Enter your mobile number',
-    body: 'Provide an active number you can access, since it is used for OTP verification and password recovery later.',
+    title: 'Provide your mobile number',
+    body: 'Use a number you can actually access — it handles OTP verification now and password recovery later.',
   },
   {
-    title: 'Create a strong password',
-    body: 'Mix letters, numbers, and symbols. Avoid reusing a password from your email or banking apps.',
+    title: 'Set a strong, unique password',
+    body: "Combine letters, numbers and symbols, and avoid reusing a password from your email or banking apps.",
   },
   {
-    title: 'Verify with OTP',
-    body: 'Enter the one-time code sent by SMS. Do not share this code with anyone, including people claiming to be "support".',
+    title: 'Confirm the OTP',
+    body: 'Enter the SMS code exactly as received. Never forward this code to anyone, even someone claiming to be "support".',
   },
   {
-    title: 'Add an invite code (optional)',
-    body: 'If you have a valid invite code, enter it where prompted to potentially unlock a welcome bonus — see our Invite Code guide.',
+    title: 'Add an invite code if you have one',
+    body: 'Optional, but worth entering if you have a valid code — see our Invite Code guide for the full details.',
   },
 ];

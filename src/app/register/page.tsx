@@ -26,7 +26,7 @@ export default function RegisterPage() {
       <PageHero
         eyebrow="Sikkim Game Register"
         title="Sikkim Game Register: Create Your Account the Right Way"
-        intro="New to Sikkim Game — also searched as Sikkim Register? This guide covers exactly what information you need, how the sign-up flow works, and how to use an invite code if you have one."
+        intro="New to Sikkim Game? This guide covers exactly what information you need, how the sign-up flow works, and how to use an invite code if you have one."
       />
 
       <Section>
@@ -35,12 +35,12 @@ export default function RegisterPage() {
           {registerSteps.map((step, index) => (
             <Card key={step.title}>
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-royal-500/20 text-sm font-bold text-neon-300">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-500/15 text-sm font-bold text-brand-700 dark:bg-brand-500/20 dark:text-brand-300">
                   {index + 1}
                 </span>
-                <h3 className="text-base font-semibold text-white">{step.title}</h3>
+                <h3 className="text-base font-semibold text-night-900 dark:text-white">{step.title}</h3>
               </div>
-              <p className="mt-3 text-sm leading-relaxed text-slate-300">{step.body}</p>
+              <p className="mt-3 text-sm leading-relaxed text-night-700/80 dark:text-paper-200/80">{step.body}</p>
             </Card>
           ))}
         </div>
@@ -48,19 +48,19 @@ export default function RegisterPage() {
           <CtaButton href={SITE.registerUrl} variant="primary" size="lg">
             <UserPlusIcon className="h-4 w-4" /> Register Now
           </CtaButton>
-          <CtaButton href="/invite-code" external={false} variant="secondary" size="lg">
+          <CtaButton href="/sikkim-game-invite-code" external={false} variant="secondary" size="lg">
             <TicketIcon className="h-4 w-4" /> Have an Invite Code?
           </CtaButton>
         </div>
       </Section>
 
-      <Section className="border-t border-white/5 bg-navy-900/40">
+      <Section className="border-t border-night-900/5 bg-paper-100/70 dark:border-white/5 dark:bg-night-900/40">
         <SectionHeading eyebrow="Before you sign up" title="What to check before registering" />
-        <div className="max-w-3xl space-y-4 text-sm leading-relaxed text-slate-300">
+        <div className="max-w-3xl space-y-4 text-sm leading-relaxed text-night-700/80 dark:text-paper-200/80">
           <p>
-            Registration on Sikkim Game is designed to be quick, but a little preparation helps
-            avoid delays. Make sure your phone can receive SMS OTPs, and double-check you are on
-            the official domain linked from our <CtaButton href="/download" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>Download page</CtaButton> before
+            Registration on Sikkim Game is designed to be quick, but a little preparation avoids
+            delays. Make sure your phone can receive SMS OTPs, and confirm you are on the official
+            domain linked from our <CtaButton href="/download" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>Download page</CtaButton> before
             entering any personal details.
           </p>
           <p>

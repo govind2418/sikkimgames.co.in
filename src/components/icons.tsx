@@ -164,6 +164,60 @@ export function CoinsIcon({ className }: IconProps) {
   );
 }
 
+export function SunIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <circle cx="12" cy="12" r="4.2" />
+      <path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7" />
+    </svg>
+  );
+}
+
+export function MoonIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z" />
+    </svg>
+  );
+}
+
+export function PhoneCallIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M4 4h4l1.5 5-2.3 1.6a12.5 12.5 0 0 0 5.7 5.7L14.8 14l5 1.5v4a2 2 0 0 1-2.2 2A17 17 0 0 1 2 5.2 2 2 0 0 1 4 4Z" />
+    </svg>
+  );
+}
+
+export function WalletIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <rect x="2.5" y="6" width="19" height="13" rx="2" />
+      <path d="M2.5 10h19" />
+      <circle cx="16.5" cy="14" r="1.2" fill="currentColor" stroke="none" />
+      <path d="M6 6V5a2 2 0 0 1 2-2h8" />
+    </svg>
+  );
+}
+
+export function CrownIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M3 8l4 3 5-6 5 6 4-3-2 11H5L3 8Z" />
+      <path d="M5 19h14" />
+    </svg>
+  );
+}
+
+export function RefreshIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M3 12a9 9 0 0 1 15.3-6.4L21 8M21 3v5h-5" />
+      <path d="M21 12a9 9 0 0 1-15.3 6.4L3 16M3 21v-5h5" />
+    </svg>
+  );
+}
+
 export function UsersIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className}>

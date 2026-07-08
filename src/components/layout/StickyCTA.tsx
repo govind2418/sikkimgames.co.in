@@ -4,7 +4,7 @@ import { SITE } from '@/lib/site';
 
 export function StickyCTA() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-navy-950/95 backdrop-blur-sm lg:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-night-900/10 bg-paper-50/95 backdrop-blur-sm dark:border-white/10 dark:bg-night-950/95 lg:hidden">
       <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3">
         <CtaButton
           href="/download"

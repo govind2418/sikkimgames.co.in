@@ -28,12 +28,12 @@ export function SectionHeading({
   return (
     <div className="mb-8 max-w-2xl">
       {eyebrow && (
-        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-neon-400">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-300">
           {eyebrow}
         </p>
       )}
-      <As className="text-2xl font-bold text-white sm:text-3xl">{title}</As>
-      {subtitle && <p className="mt-3 text-slate-300">{subtitle}</p>}
+      <As className="font-display text-2xl font-bold text-night-900 sm:text-3xl dark:text-white">{title}</As>
+      {subtitle && <p className="mt-3 text-night-700/80 dark:text-paper-200/80">{subtitle}</p>}
     </div>
   );
 }

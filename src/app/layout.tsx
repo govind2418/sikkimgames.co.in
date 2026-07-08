@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Sora } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -14,10 +14,28 @@ const inter = Inter({
   preload: true,
 });
 
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-sora',
+  display: 'swap',
+  weight: ['600', '700', '800'],
+  preload: true,
+});
+
+const NO_FLASH_THEME_SCRIPT = `
+(function () {
+  try {
+    var stored = localStorage.getItem('sg-theme');
+    var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (dark) document.documentElement.classList.add('dark');
+  } catch (e) {}
+})();
+`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — Login, Register, Download, Wingo & Colour Prediction`,
+    default: `${SITE.name} — Login, Register, APK Download & Prediction Guides`,
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
@@ -30,24 +48,19 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  verification: {
-    google: 'UWWFC1BQhro8tzO6aD8DLvQj8PmuxS51nr4qoZzWchM',
-  },
   keywords: [
     'Sikkim Game',
     'Sikkim Game Login',
     'Sikkim Game Register',
-    'Sikkim Login',
-    'Sikkim Register',
     'Sikkim Game Download',
     'Sikkim Game APK',
-    'Sikkim Game App',
     'Sikkim Game Invite Code',
     'Sikkim Game Gift Code',
-    'Sikkim Game Colour Prediction',
-    'Sikkim Game Wingo',
+    'Sikkim Wingo Prediction',
     'Sikkim Colour Prediction',
-    'Sikkim Wingo',
+    'Sikkim Game Referral Bonus',
+    'Sikkim Game Customer Care',
+    'Sikkim Game Real or Fake',
   ],
 };
 
@@ -59,8 +72,11 @@ export const viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="flex min-h-screen flex-col bg-navy-950 font-sans antialiased">
+    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: NO_FLASH_THEME_SCRIPT }} />
+      </head>
+      <body className="flex min-h-screen flex-col bg-paper-50 font-sans text-night-900 antialiased dark:bg-night-950 dark:text-paper-100">
         <JsonLd data={organizationSchema()} />
         <Header />
         <main className="flex-1">{children}</main>

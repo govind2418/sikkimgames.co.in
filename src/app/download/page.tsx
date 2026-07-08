@@ -39,12 +39,12 @@ export default function DownloadPage() {
               {downloadSteps.map((step, index) => (
                 <Card key={step.title}>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-royal-500/20 text-sm font-bold text-neon-300">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-500/15 text-sm font-bold text-brand-700 dark:bg-brand-500/20 dark:text-brand-300">
                       {index + 1}
                     </span>
-                    <h3 className="text-base font-semibold text-white">{step.title}</h3>
+                    <h3 className="text-base font-semibold text-night-900 dark:text-white">{step.title}</h3>
                   </div>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-300">{step.body}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-night-700/80 dark:text-paper-200/80">{step.body}</p>
                 </Card>
               ))}
             </div>
@@ -57,7 +57,7 @@ export default function DownloadPage() {
               </CtaButton>
             </div>
           </div>
-          <div className="mx-auto rounded-3xl border border-white/10 bg-navy-800/60 p-6 text-center shadow-card">
+          <div className="mx-auto rounded-3xl border border-night-900/10 bg-white p-6 text-center shadow-card dark:border-white/10 dark:bg-night-800/60 dark:shadow-card-dark">
             <Image
               src={appIcon}
               alt="Sikkim Game app icon"
@@ -65,27 +65,27 @@ export default function DownloadPage() {
               height={120}
               className="mx-auto rounded-3xl shadow-glow"
             />
-            <p className="mt-4 text-sm font-semibold text-white">Sikkim Game App</p>
-            <p className="text-xs text-slate-400">Android APK · Mobile Web</p>
+            <p className="mt-4 text-sm font-semibold text-night-900 dark:text-white">Sikkim Game App</p>
+            <p className="text-xs text-night-700/60 dark:text-paper-300/60">Android APK · Mobile Web</p>
           </div>
         </div>
       </Section>
 
-      <Section className="border-t border-white/5 bg-navy-900/40">
+      <Section className="border-t border-night-900/5 bg-paper-100/70 dark:border-white/5 dark:bg-night-900/40">
         <SectionHeading eyebrow="Before installing" title="Download safety checklist" />
         <div className="grid gap-5 sm:grid-cols-2">
           <Card glass>
-            <ShieldIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Verify the source</h3>
-            <p className="mt-2 text-sm text-slate-300">
+            <ShieldIcon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-3 text-base font-semibold text-night-900 dark:text-white">Verify the source</h3>
+            <p className="mt-2 text-sm text-night-700/80 dark:text-paper-200/80">
               Only download from the official link. Avoid random forwarded APK files, since
               modified files can contain unwanted extras.
             </p>
           </Card>
           <Card glass>
-            <SmartphoneIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Check storage &amp; OS version</h3>
-            <p className="mt-2 text-sm text-slate-300">
+            <SmartphoneIcon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-3 text-base font-semibold text-night-900 dark:text-white">Check storage &amp; OS version</h3>
+            <p className="mt-2 text-sm text-night-700/80 dark:text-paper-200/80">
               Make sure your phone has enough free storage and is running a reasonably recent
               Android version for the smoothest installation experience.
             </p>

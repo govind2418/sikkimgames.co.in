@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
           alignItems: 'flex-start',
           justifyContent: 'center',
           padding: '80px',
-          background: 'linear-gradient(135deg, #050914 0%, #0a1024 55%, #101a3a 100%)',
+          background: 'linear-gradient(135deg, #ffffff 0%, #ecfdf5 55%, #d1fae5 100%)',
           fontFamily: 'sans-serif',
         }}
       >
@@ -29,20 +29,21 @@ export async function GET(request: NextRequest) {
             gap: '12px',
             padding: '8px 20px',
             borderRadius: '999px',
-            border: '1px solid rgba(56,189,248,0.4)',
-            color: '#38bdf8',
+            border: '1px solid rgba(5,150,105,0.35)',
+            background: 'rgba(5,150,105,0.06)',
+            color: '#047857',
             fontSize: '22px',
             marginBottom: '32px',
           }}
         >
-          sikkimgame.in.net
+          sikkimgames.co.in
         </div>
         <div
           style={{
             display: 'flex',
             fontSize: '68px',
             fontWeight: 800,
-            color: 'white',
+            color: '#0c1713',
             lineHeight: 1.15,
             maxWidth: '950px',
           }}
@@ -54,10 +55,10 @@ export async function GET(request: NextRequest) {
             display: 'flex',
             marginTop: '28px',
             fontSize: '28px',
-            color: '#94a3b8',
+            color: '#3f5850',
           }}
         >
-          Login • Register • Download • Wingo • Colour Prediction
+          Login • Register • Download • Wingo Prediction • Colour Prediction
         </div>
       </div>
     ),

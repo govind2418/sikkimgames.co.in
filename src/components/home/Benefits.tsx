@@ -5,33 +5,33 @@ import { ZapIcon, ShieldIcon, SmartphoneIcon, GiftIcon, UsersIcon, GridIcon } fr
 const benefits = [
   {
     icon: ZapIcon,
-    title: 'Fast, No-Clutter Guides',
-    body: 'Every guide loads instantly and gets straight to the point — no pop-ups, no autoplay video, no bloated pages slowing you down on mobile data.',
+    title: 'Quick, Clutter-Free Guides',
+    body: 'Every guide is built to load instantly and get to the point fast — no pop-ups, no autoplay video, no bloated pages eating your mobile data.',
   },
   {
     icon: ShieldIcon,
-    title: 'Independent & Transparent',
-    body: 'We clearly label ourselves as an unofficial information resource, not the operator, so you always know exactly where your account and funds are handled.',
+    title: 'Independent & Clearly Labelled',
+    body: 'We state plainly that this is an unofficial player guide, not the operator, so you always know where your account and funds are actually handled.',
   },
   {
     icon: SmartphoneIcon,
-    title: 'Step-by-Step Download Help',
-    body: 'Clear, numbered instructions for installing the Android APK safely and finding the official app link without hunting through search results.',
+    title: 'Careful Download Instructions',
+    body: 'Numbered, screenshot-free steps for finding and installing the Android APK safely, without wading through cluttered search results.',
   },
   {
     icon: GiftIcon,
-    title: 'Invite & Gift Code Explained',
-    body: 'Understand how invite codes and gift codes are structured, where to enter them, and what to check before trusting a code shared online.',
+    title: 'Invite & Gift Codes Decoded',
+    body: 'Understand how invite codes and gift codes are structured, where they get applied, and what to double-check before trusting a code shared online.',
   },
   {
     icon: GridIcon,
-    title: 'Wingo & Colour Prediction 101',
-    body: 'Plain-language explanations of how Wingo rounds and Colour Prediction results are structured, so you go in understanding the basics.',
+    title: 'Wingo & Colour Prediction Basics',
+    body: 'Plain-language breakdowns of how Wingo rounds and Colour Prediction outcomes are structured, so you understand the format before you play.',
   },
   {
     icon: UsersIcon,
-    title: 'Built for Sikkim Game Users',
-    body: 'Content is organized around the exact questions players search for — login issues, registration steps, codes, and game rules — in one hub.',
+    title: 'Organised Around Real Questions',
+    body: 'Pages are structured around what players actually search for — login errors, sign-up steps, bonus codes, and game rules — all in one place.',
   },
 ];
 
@@ -39,16 +39,16 @@ export function Benefits() {
   return (
     <Section id="benefits">
       <SectionHeading
-        eyebrow="Why use this hub"
-        title="A cleaner way to find Sikkim Game information"
-        subtitle="We built this site to be fast and clear first — every page is designed to help you get to the official platform informed, not confused."
+        eyebrow="Why players use this guide"
+        title="A clearer way to research Sikkim Game"
+        subtitle="Built to be fast and easy to scan first — every page helps you reach the official platform informed, not confused."
       />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {benefits.map(({ icon: Icon, title, body }) => (
           <Card key={title}>
-            <Icon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-4 text-lg font-semibold text-white">{title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-slate-300">{body}</p>
+            <Icon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-4 text-lg font-semibold text-night-900 dark:text-white">{title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-night-700/80 dark:text-paper-200/80">{body}</p>
           </Card>
         ))}
       </div>

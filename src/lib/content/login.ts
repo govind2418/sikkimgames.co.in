@@ -2,47 +2,47 @@ import type { FaqItem } from '@/lib/schema';
 
 export const loginFaqs: FaqItem[] = [
   {
-    question: 'How do I log in to Sikkim Game?',
+    question: 'What is the correct way to log in to Sikkim Game?',
     answer:
-      'Open the official Sikkim Game app or website, enter the mobile number you registered with along with your password, and tap Login. If you installed the APK, make sure you are using the latest version to avoid login errors.',
+      'Open the official app or website, enter the registered mobile number and password, then tap Login. If you installed the APK, confirm you are on the latest build — outdated versions are a common cause of login trouble.',
   },
   {
-    question: 'I forgot my Sikkim Game password. What do I do?',
+    question: "I can't remember my password — what now?",
     answer:
-      'Use the "Forgot Password" option on the official login screen to reset it via your registered mobile number. If you no longer have access to that number, you will need to contact official support through the app.',
+      'Use "Forgot Password" on the login screen to reset it through your registered mobile number. If that number is no longer active, you will need to reach official in-app support directly.',
   },
   {
-    question: 'Why does my Sikkim Game login keep failing?',
+    question: 'Why does the app keep rejecting my login?',
     answer:
-      'Login failures are usually caused by an outdated app version, an incorrect password, a weak internet connection, or entering the wrong country code. Double-check each of these before trying again.',
+      'The usual culprits are an old app version, a mistyped password, patchy internet, or the wrong country code on the phone number field. Rule each one out before trying again.',
   },
   {
-    question: 'Can I log in to Sikkim Game from a browser?',
+    question: 'Can I sign in through a browser instead of the app?',
     answer:
-      'Many players prefer the app for stability, but a web login option may also be available. Check the Download page for the current official links.',
+      'A web login is often available alongside the app. Our Download page keeps the current official links for both routes.',
   },
   {
-    question: 'Is it safe to save my Sikkim Game login details?',
+    question: 'Is it okay to stay logged in on my phone?',
     answer:
-      'Only save your login on a personal, password-protected device. Never share your password, OTP, or login link with anyone claiming to offer bonuses or account help.',
+      'Only on a personal device protected by a screen lock. Never hand over your password, OTP, or a "login link" to anyone offering bonuses in exchange — that is a scam pattern, not a real support process.',
   },
 ];
 
 export const loginSteps = [
   {
-    title: 'Open the official app or site',
-    body: 'Launch the Sikkim Game app you installed, or open the official login page in your browser. Avoid links shared in random messages — use the link from our Download page.',
+    title: 'Launch the right app or page',
+    body: 'Open the Sikkim Game app you installed, or reach the official login page through the link on our Download page — steer clear of links sent in random chats.',
   },
   {
-    title: 'Enter your registered mobile number',
-    body: 'Type in the exact mobile number used during registration, including the correct country code if prompted.',
+    title: 'Type your registered mobile number',
+    body: 'Use the exact number tied to your account, country code included if the field asks for it.',
   },
   {
-    title: 'Enter your password',
-    body: 'Carefully type your password. If you are unsure, use the Forgot Password option instead of guessing repeatedly, which can temporarily lock some accounts.',
+    title: 'Enter your password carefully',
+    body: "If you're not confident you remember it correctly, use Forgot Password rather than guessing repeatedly — repeated failed attempts can lock some accounts.",
   },
   {
-    title: 'Tap Login and verify',
-    body: 'Complete any OTP or verification step if asked, then you should land on your account dashboard, ready to check your balance or continue to a game mode.',
+    title: 'Confirm and continue',
+    body: 'Complete any OTP step if prompted. You should then land on your account dashboard, ready to check your balance or open a game mode.',
   },
 ];

@@ -2,47 +2,47 @@ import type { FaqItem } from '@/lib/schema';
 
 export const downloadFaqs: FaqItem[] = [
   {
-    question: 'How do I download the Sikkim Game APK?',
+    question: 'How do I get the Sikkim Game APK?',
     answer:
-      'Use the official download link to get the Android APK file, allow installation from your browser/file manager when prompted, then open the file to install. Always download from the official source rather than third-party app stores.',
+      'Follow the official download link, allow your browser or file manager to install the downloaded file when prompted, then open it to complete installation. Stick to the official source rather than third-party app listings.',
   },
   {
-    question: 'Is the Sikkim Game APK safe to install?',
+    question: 'Is the APK file actually safe to run?',
     answer:
-      'Only install APKs from the official link. Third-party mirror sites sometimes bundle modified or unsafe files. If your phone flags the file as unrecognized, verify the source before proceeding.',
+      'It is when it comes from the official link. Mirror sites sometimes repackage modified files. If your phone flags the file as unrecognized, double-check the source before continuing.',
   },
   {
-    question: 'Why can\'t I install the APK on my Android phone?',
+    question: 'The install button is greyed out or blocked — why?',
     answer:
-      'Most Android phones block APK installs from unknown sources by default. Go to Settings > Security (or Apps) and enable "Install unknown apps" for your browser, then try again.',
+      'Android blocks installs from unknown sources by default on most phones. Go to Settings > Security (or Apps), enable "Install unknown apps" for the browser you used, then retry.',
   },
   {
-    question: 'Is there a Sikkim Game app for iPhone?',
+    question: 'Is there an iPhone version?',
     answer:
-      'Many platforms in this category primarily support Android APKs and a mobile web app rather than a native iOS App Store listing. iPhone users can typically use the web version in a mobile browser.',
+      'Platforms in this category typically ship an Android APK plus a mobile-friendly website rather than a native iOS App Store listing. iPhone users can generally use the web version in Safari or Chrome.',
   },
   {
-    question: 'Do I need to download an app, or can I just use the website?',
+    question: 'Do I have to install the app, or can I just use the site?',
     answer:
-      'Both options are usually available. The app can offer a slightly smoother experience and notifications, while the web version needs no installation at all.',
+      'Both routes usually work. The app tends to feel a little smoother and can send notifications; the website needs no installation step at all.',
   },
 ];
 
 export const downloadSteps = [
   {
-    title: 'Tap the official download button',
-    body: 'Use the link on this page to reach the official download source rather than searching app stores, where clone or fake listings sometimes appear.',
+    title: 'Start from the official link',
+    body: 'Use the button on this page rather than searching app stores, where clone listings and fake apps sometimes surface.',
   },
   {
-    title: 'Allow installation from your browser',
-    body: 'Android will prompt you to allow installs from unknown sources the first time — enable this only for the browser or file manager you used to download the file.',
+    title: 'Allow the install prompt',
+    body: 'Android will ask permission to install from an unknown source the first time — approve it only for the browser or file manager you used to download.',
   },
   {
-    title: 'Install and open the app',
-    body: 'Once installed, open the app, and you will land on the login or register screen depending on whether you already have an account.',
+    title: 'Open the freshly installed app',
+    body: "You'll land on the login or register screen depending on whether you already have an account.",
   },
   {
-    title: 'Keep the app updated',
-    body: 'Check back periodically for newer APK versions, since outdated versions can cause login errors or missing features.',
+    title: 'Check back for updates',
+    body: 'Revisit this page occasionally for newer APK builds — outdated versions are a common source of login glitches and missing features.',
   },
 ];

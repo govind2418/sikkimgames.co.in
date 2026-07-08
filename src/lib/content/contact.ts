@@ -2,18 +2,18 @@ import type { FaqItem } from '@/lib/schema';
 
 export const contactFaqs: FaqItem[] = [
   {
-    question: 'Can you help with my Sikkim Game account, deposit or withdrawal issue?',
+    question: 'Can you fix my account, deposit or withdrawal problem?',
     answer:
-      'No — account, deposit and withdrawal issues must be handled through official in-app support, since we do not have access to any user account or transaction data. Use the app\'s support/help section for those requests.',
+      "No — those need official in-app support, since we don't have access to any user account or transaction records. Use the help/support section inside the official app for anything account-related.",
   },
   {
-    question: 'What can I contact sikkimgame.in.net about?',
+    question: 'What should I actually contact sikkimgames.co.in about?',
     answer:
-      'Reach out for corrections to our guides, broken links, content suggestions, or general questions about the information published on this site.',
+      'Corrections to a guide, a broken link, a content suggestion, or general questions about what is published on this site.',
   },
   {
-    question: 'How quickly do you respond?',
+    question: 'How fast will I hear back?',
     answer:
-      'We aim to review messages within a few business days. For time-sensitive account issues, official in-app support will always be faster than contacting us.',
+      'We aim to review messages within a few business days. For anything time-sensitive on your account, official in-app support will always be quicker than reaching us.',
   },
 ];

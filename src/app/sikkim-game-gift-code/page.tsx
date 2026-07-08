@@ -8,31 +8,24 @@ import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
 import { GiftIcon, ShieldIcon } from '@/components/icons';
-import { giftCodeFaqs } from '@/lib/content/giftCode';
+import { giftCodeFaqs, giftCodeSteps } from '@/lib/content/giftCode';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Gift Code — How to Redeem Bonus Codes',
   description:
-    'Learn how Sikkim Game gift codes work, where to redeem them in the app, and how to tell a real code from a scam.',
-  path: '/gift-code',
+    'Learn how Sikkim Game gift codes work, exactly where to redeem them in the app, and how to tell a real code from a scam.',
+  path: '/sikkim-game-gift-code',
   keywords: ['Sikkim Game Gift Code', 'Sikkim Game Redeem Code'],
 });
-
-const redeemSteps = [
-  'Open the official Sikkim Game app and log in to your account.',
-  'Navigate to the Rewards, Promotions, or Redeem Code section.',
-  'Enter the gift code exactly as shared, with correct capitalisation and no spaces.',
-  'Confirm the redemption and check your balance or rewards tab for the bonus.',
-];
 
 export default function GiftCodePage() {
   return (
     <>
-      <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Gift Code', path: '/gift-code' }]} />
+      <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Gift Code', path: '/sikkim-game-gift-code' }]} />
       <PageHero
         eyebrow="Sikkim Game Gift Code"
         title="Sikkim Game Gift Code: How to Redeem It Correctly"
-        intro="Gift codes unlock bonus rewards when redeemed correctly. Here's how the redemption process works and how to avoid fake code scams."
+        intro="Gift codes unlock a bonus reward when redeemed the right way. Here's how the process works and how to spot a fake code scam before it costs you anything."
       />
 
       <Section>
@@ -40,12 +33,12 @@ export default function GiftCodePage() {
           <div>
             <SectionHeading eyebrow="Redemption steps" title="How to redeem a gift code" />
             <ol className="space-y-4">
-              {redeemSteps.map((step, index) => (
-                <li key={step} className="flex gap-3 rounded-xl border border-white/10 bg-navy-800/50 p-4">
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-royal-500/20 text-xs font-bold text-neon-300">
+              {giftCodeSteps.map((step, index) => (
+                <li key={step} className="flex gap-3 rounded-xl border border-night-900/10 bg-white p-4 dark:border-white/10 dark:bg-night-800/50">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-500/15 text-xs font-bold text-brand-700 dark:bg-brand-500/20 dark:text-brand-300">
                     {index + 1}
                   </span>
-                  <p className="text-sm text-slate-300">{step}</p>
+                  <p className="text-sm text-night-700/80 dark:text-paper-200/80">{step}</p>
                 </li>
               ))}
             </ol>
@@ -53,15 +46,15 @@ export default function GiftCodePage() {
               <CtaButton variant="primary" size="lg">
                 <GiftIcon className="h-4 w-4" /> Open App &amp; Redeem
               </CtaButton>
-              <CtaButton href="/invite-code" external={false} variant="secondary" size="lg">
+              <CtaButton href="/sikkim-game-invite-code" external={false} variant="secondary" size="lg">
                 Invite Code Guide
               </CtaButton>
             </div>
           </div>
           <Card glass className="h-fit">
-            <ShieldIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Spotting a fake gift code offer</h3>
-            <ul className="mt-3 space-y-2 text-sm text-slate-300">
+            <ShieldIcon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-3 text-base font-semibold text-night-900 dark:text-white">Spotting a fake gift code offer</h3>
+            <ul className="mt-3 space-y-2 text-sm text-night-700/80 dark:text-paper-200/80">
               <li>• Asked to pay a fee to &quot;activate&quot; the code — always a red flag.</li>
               <li>• Asked for your password or OTP to &quot;verify&quot; the code — never legitimate.</li>
               <li>• Promises of guaranteed huge winnings tied to a single code.</li>
@@ -71,7 +64,7 @@ export default function GiftCodePage() {
         </div>
       </Section>
 
-      <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
+      <Section id="faq" className="border-t border-night-900/5 bg-paper-100/70 dark:border-white/5 dark:bg-night-900/40">
         <SectionHeading eyebrow="FAQs" title="Sikkim Game Gift Code — Frequently Asked Questions" />
         <FaqAccordion items={giftCodeFaqs} />
       </Section>

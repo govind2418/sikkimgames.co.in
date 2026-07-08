@@ -2,23 +2,23 @@ import type { FaqItem } from '@/lib/schema';
 
 export const aboutFaqs: FaqItem[] = [
   {
-    question: 'Who runs sikkimgame.in.net?',
+    question: 'Who is behind sikkimgames.co.in?',
     answer:
-      'sikkimgame.in.net is an independent information resource focused on Sikkim Game — covering login, registration, downloads, codes and game rules. We are not the game operator.',
+      'sikkimgames.co.in is an independent player guide focused on Sikkim Game — covering login, registration, downloads, bonus codes and game-mode explainers. We are not the game operator.',
   },
   {
-    question: 'Are you affiliated with the Government of Sikkim?',
+    question: 'Is this site connected to the Government of Sikkim?',
     answer:
-      'No. Despite the shared name, this site is not operated, endorsed, or affiliated with the Government of Sikkim or any state authority. "Sikkim Game" is simply the common name used for this platform by players.',
+      'No. Despite the shared name, this site is not run, endorsed, or affiliated with the Government of Sikkim or any state authority. "Sikkim Game" is simply the common player name for this platform.',
   },
   {
-    question: 'Do you operate the game or hold user funds?',
+    question: 'Do you hold accounts, deposits or process withdrawals?',
     answer:
-      'No. We do not run any game, process deposits or withdrawals, or hold user accounts. All of that takes place on the official operator\'s platform, which our pages link to.',
+      'No. We do not run any game, hold user funds, or process transactions. All of that happens on the official operator platform that our pages link to.',
   },
   {
-    question: 'How do you make money?',
+    question: 'How does this site make money?',
     answer:
-      'This site may earn a referral commission when visitors sign up on the official platform through our links, at no extra cost to the user. This does not affect the accuracy of our content.',
+      'We may earn a referral commission when someone registers on the official platform through our links, at no extra cost to that person. That relationship does not change what our guides say.',
   },
 ];

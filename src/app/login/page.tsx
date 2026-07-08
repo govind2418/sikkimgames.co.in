@@ -14,7 +14,7 @@ import { SITE } from '@/lib/site';
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Login — Step-by-Step Sign In Guide',
   description:
-    'Learn how to log in to Sikkim Game quickly and safely. Fix common login errors and find the official login link for app and web.',
+    'Learn how to log in to Sikkim Game quickly and safely. Fix common login errors and find the correct official login link for app and web.',
   path: '/login',
   keywords: ['Sikkim Game Login', 'Sikkim Login', 'Sikkim Game Sign In', 'Sikkim Game Account'],
 });
@@ -26,7 +26,7 @@ export default function LoginPage() {
       <PageHero
         eyebrow="Sikkim Game Login"
         title="Sikkim Game Login: How to Sign In the Right Way"
-        intro="Signing in to Sikkim Game — sometimes searched simply as Sikkim Login — only takes a few seconds once you know the correct steps. This guide walks you through logging in, fixing common errors, and keeping your account secure."
+        intro="Signing in to Sikkim Game only takes a few seconds once you know the right steps. This guide covers logging in, fixing common errors, and keeping your account secure."
       />
 
       <Section>
@@ -35,12 +35,12 @@ export default function LoginPage() {
           {loginSteps.map((step, index) => (
             <Card key={step.title}>
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-royal-500/20 text-sm font-bold text-neon-300">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-500/15 text-sm font-bold text-brand-700 dark:bg-brand-500/20 dark:text-brand-300">
                   {index + 1}
                 </span>
-                <h3 className="text-base font-semibold text-white">{step.title}</h3>
+                <h3 className="text-base font-semibold text-night-900 dark:text-white">{step.title}</h3>
               </div>
-              <p className="mt-3 text-sm leading-relaxed text-slate-300">{step.body}</p>
+              <p className="mt-3 text-sm leading-relaxed text-night-700/80 dark:text-paper-200/80">{step.body}</p>
             </Card>
           ))}
         </div>
@@ -54,27 +54,27 @@ export default function LoginPage() {
         </div>
       </Section>
 
-      <Section className="border-t border-white/5 bg-navy-900/40">
+      <Section className="border-t border-night-900/5 bg-paper-100/70 dark:border-white/5 dark:bg-night-900/40">
         <SectionHeading eyebrow="Stay secure" title="Sikkim Game login safety checklist" />
         <div className="grid gap-5 sm:grid-cols-2">
           <Card glass>
-            <ShieldIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Only use official links</h3>
-            <p className="mt-2 text-sm text-slate-300">
+            <ShieldIcon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-3 text-base font-semibold text-night-900 dark:text-white">Only use official links</h3>
+            <p className="mt-2 text-sm text-night-700/80 dark:text-paper-200/80">
               Bookmark the official login link from our Download page instead of clicking links
               from unknown SMS, WhatsApp or social media messages promising bonus logins.
             </p>
           </Card>
           <Card glass>
-            <ShieldIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Never share OTPs</h3>
-            <p className="mt-2 text-sm text-slate-300">
+            <ShieldIcon className="h-8 w-8 text-brand-600 dark:text-brand-400" />
+            <h3 className="mt-3 text-base font-semibold text-night-900 dark:text-white">Never share OTPs</h3>
+            <p className="mt-2 text-sm text-night-700/80 dark:text-paper-200/80">
               No genuine support agent will ever ask for your OTP, password, or full bank details
               over chat. Treat any such request as a scam attempt.
             </p>
           </Card>
         </div>
-        <p className="mt-6 max-w-3xl text-sm leading-relaxed text-slate-400">
+        <p className="mt-6 max-w-3xl text-sm leading-relaxed text-night-700/70 dark:text-paper-300/70">
           If your Sikkim Game login stops working after an app update, try clearing the app cache,
           reinstalling the latest APK from our{' '}
           <CtaButton href="/download" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>

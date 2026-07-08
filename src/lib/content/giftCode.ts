@@ -4,26 +4,33 @@ export const giftCodeFaqs: FaqItem[] = [
   {
     question: 'What is a Sikkim Game gift code?',
     answer:
-      'A gift code (sometimes called a redeem code) is a short code that unlocks a specific reward — such as bonus credit — when entered in the app\'s redemption or rewards section.',
+      'A short redeem code that unlocks a specific reward — bonus credit, most commonly — once entered in the app\'s rewards or redemption section.',
   },
   {
-    question: 'Where do I redeem a Sikkim Game gift code?',
+    question: 'Where exactly do I redeem it?',
     answer:
-      'Log in to the official app, go to the Rewards, Promotions, or Redeem Code section (naming varies by version), enter the code exactly as given, and confirm.',
+      'Log in to the official app, open the Rewards / Promotions / Redeem Code section (the name shifts slightly between versions), enter the code, and confirm.',
   },
   {
-    question: 'Why is my gift code not working?',
+    question: "My code isn't working — why?",
     answer:
-      'Gift codes usually expire after a set time or a limited number of uses. Double-check for typos, extra spaces, or capitalisation, and confirm the code hasn\'t already been claimed or expired.',
+      'Gift codes typically expire after a set window or a limited number of redemptions. Check for typos, stray spaces, or wrong capitalisation, and confirm the code hasn\'t already been used or expired.',
   },
   {
-    question: 'Are Sikkim Game gift codes free?',
+    question: 'Do I have to pay to use a gift code?',
     answer:
-      'Yes. Legitimate gift codes are free to redeem. If anyone asks you to pay money or share your password/OTP to "unlock" a gift code, that is a scam — do not proceed.',
+      'No — legitimate gift codes are free. If someone asks for payment, your password, or an OTP to "unlock" a code, that is a scam and you should not proceed.',
   },
   {
-    question: 'Where can I find new gift codes?',
+    question: 'Where are new gift codes usually posted?',
     answer:
-      'Official promotional channels and in-app notifications are the most reliable sources. Be cautious with codes from unverified pages, and never enter sensitive account details to "verify" a code.',
+      'Official promotional channels and in-app notifications are the most reliable places. Be wary of codes from unverified pages, especially any that ask for account details to "verify" the code first.',
   },
+];
+
+export const giftCodeSteps = [
+  'Open the official Sikkim Game app and log in to your account.',
+  'Navigate to the Rewards, Promotions, or Redeem Code section.',
+  'Enter the gift code exactly as shared, matching capitalisation with no extra spaces.',
+  'Confirm the redemption and check your balance or rewards tab for the credit.',
 ];

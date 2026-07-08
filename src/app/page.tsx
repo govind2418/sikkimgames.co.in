@@ -12,9 +12,9 @@ import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { homeFaqs } from '@/lib/content/home';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game — Login, Register, Download, Wingo & Colour Prediction',
+  title: 'Sikkim Game — Login, Register, APK Download & Prediction Guides',
   description:
-    'Independent Sikkim Game info hub: login & register steps, APK download, invite codes, gift codes, and Wingo & Colour Prediction guides in one place.',
+    'Independent Sikkim Game player guide: login & register steps, APK download, invite codes, gift codes, and Wingo & Colour Prediction explainers in one place.',
   path: '/',
   keywords: ['Sikkim Game', 'Sikkim Game Login', 'Sikkim Game Register', 'Sikkim Game Download'],
 });

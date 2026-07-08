@@ -2,28 +2,28 @@ import type { FaqItem } from '@/lib/schema';
 
 export const homeFaqs: FaqItem[] = [
   {
-    question: 'What is Sikkim Game?',
+    question: 'What exactly is Sikkim Game?',
     answer:
-      'Sikkim Game is the common name players use for an online colour prediction and Wingo-style number game platform. This website, sikkimgame.in.net, is an independent guide hub covering login, registration, download, invite codes, gift codes and game rules — it is not the operator itself.',
+      'Sikkim Game is the name players commonly use for an online Colour Prediction and Wingo-style number game platform. sikkimgames.co.in is an independent player guide covering login, registration, APK download, invite codes, gift codes and how the game modes work — it does not operate the game itself.',
   },
   {
-    question: 'Is sikkimgame.in.net the official Sikkim Game app?',
+    question: 'Is sikkimgames.co.in the official Sikkim Game app or website?',
     answer:
-      'No. sikkimgame.in.net is an independent, unofficial information resource. Account creation, deposits, gameplay and withdrawals all happen on the official operator platform, which our Register and Download pages link to.',
+      'No. This is an independent, unofficial guide. Account creation, deposits, gameplay and withdrawals all happen on the official operator platform, which our Register and Download pages link to directly.',
   },
   {
-    question: 'How do I register for Sikkim Game?',
+    question: 'How do I create a Sikkim Game account?',
     answer:
-      'Visit our Register page for a full step-by-step walkthrough, or tap the Register Now button on any page to go directly to the official sign-up flow.',
+      'Head to our Register page for the full walkthrough, or tap any "Register Now" button on this site to jump straight to the official sign-up screen.',
   },
   {
-    question: 'Where can I download the Sikkim Game APK?',
+    question: 'Where do I get the Sikkim Game APK safely?',
     answer:
-      'Our Download page explains how to get the Android APK or web app safely, including what to check before installing any third-party file.',
+      'Our Download page walks through the safest way to get the Android APK or use the mobile web app, plus what to check before installing any file.',
   },
   {
-    question: 'Is Sikkim Game legal to play?',
+    question: 'Is playing Sikkim Game legal where I live?',
     answer:
-      'Real-money gaming rules vary by state in India. We do not make legal guarantees — please check your local regulations and only play if it is permitted where you live and you are 18 or older.',
+      'Real-money gaming laws differ by Indian state and can change. We do not offer legal advice or guarantees — confirm your local rules before participating, and only play if you are 18 or older.',
   },
 ];
